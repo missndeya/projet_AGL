@@ -25,6 +25,20 @@ public class Calculator {
 		return Math.max(a, b);
 	}
 	
+	public int minElement(int list[]){
+		int min=0;
+		for (int i = 0; i < list.length; i++) {
+			min=min(min,list[i]);
+		}
+		return min;
+	}
+	public int maxElement(int list[]){
+		int max=0;
+		for (int i = 0; i < list.length; i++) {
+			max=max(max,list[i]);
+		}
+		return max;
+	}
 
 
 }
